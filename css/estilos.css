@@ -1,0 +1,487 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+body{
+    min-height:  1000px;
+
+
+
+    
+}
+
+#logo{
+     padding: 5px 90px;
+    font-size: 30px;
+    font-weight: 42;
+    font-size: 25px;
+    
+
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 5px;
+    z-index: 1000;
+    transition: 0.9s;
+    font-family: 'Heebo', sans-serif;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../imagenes/pexels-kampus-production-6684765.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.banner h2{
+    color: rgb(19, 18, 18);
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    
+}
+.banner h2 span{
+    color: rgb(124, 0, 0);
+}
+
+.sec{
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+.mxw800p{
+    max-width: 800px;
+    
+    margin: 0 auto;
+
+}
+
+.btn{
+    display: inline-block;
+    background: #4b4848;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+
+}
+
+h3{
+    font-size: 44px;
+    font-weight: 300; 
+    margin-bottom: 20px; 
+
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px; 
+    letter-spacing: 1px; 
+}
+
+.about{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+    
+}
+
+.about .box{
+    width: 300px;
+    margin: 0% auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+.about .box .iconBx{
+    margin-top: 25px;
+      color: #ffffff; 
+
+}
+
+.about .box .iconBx img{
+    max-width: 88px;  
+    margin-bottom: 22px;
+
+}
+.about .box h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.slider{
+    position: relative;
+}
+.slider-items{
+    overflow: hidden;
+}
+
+@keyframes zoom{
+    0% {transform: scale(1.2);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
+}
+
+.slider-items .item{
+    display: none;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    animation: zoom 1s;
+    
+}
+
+.slider-items .item img{
+    max-width: 100%;
+   
+}
+.slider-items .item.active{
+    display: block;
+}
+
+.slider-items .item .descripcion{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(194, 53, 53, 0.575);
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.slider .ir-atras,
+.slider .ir-sig{
+    width: 50px;
+    height: 50px;
+    background: #ef0365;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.slider .ir-atras{
+    left: 10px;
+    
+}
+
+.slider .ir-sig{
+    right: 10px;
+}
+
+.slider .ir-atras:hover,
+.slider .ir-sig:hover
+{
+background: #f70404;
+}
+
+white {
+    
+    color: white; 
+}
+.advan{
+    background: #363636;
+    min-width: 90vh;
+}
+.advanBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.advanBox .box{
+    width: 200px;
+    height: 200px;
+    background: #a7a0a0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.advanBox .box:hover{
+    background: #f5f4f4;
+    border: 10px solid #100f0f;
+    width: 200px;
+    height: 200px;
+}
+.casosBx{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+    
+    margin-top: 40px;
+}
+.persona{
+    position: relative;
+    width: 250px;
+    min-height: 300px;
+}
+.casosBx .persona .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.casosBx .persona .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffefe;
+    opacity: 0;
+    transition: .2s;
+}
+.casosBx .persona .details:hover{
+    opacity: 1;
+}
+.casosBx .persona .details h2{
+    color: #020202;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.casosBx .persona .details h2 span{
+    font-size: 12px;
+    font-weight: 300º;
+}
+.stats{
+    background: #050505;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+.stats h3,
+.stats p{
+    color: #fff;
+}
+.contact{
+    background: #020202;
+}
+.contact h3, .contact p{
+    color: #f5f4f4;
+}
+.contactForm{
+    position:relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display:flex;
+}
+.contactForm form{
+    width: 100%;
+}
+.contactForm .row100{
+    display: flex;
+    width: 100%;   
+}
+.contactForm .row100 .inputBx50{
+    width: 50%;
+    margin: 0 20px;
+}
+.contactForm .row100 .inputBx100{
+    width: 100%;
+    margin: 0 20px;
+}
+.contactForm .row100 input,
+.contactForm .row100 textarea{
+    position: relative;
+    border: none;
+    border-bottom:1px solid #816a6a;
+    color: #ca6262;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    font-size: 18px;
+    margin: 20px 0;
+    resize: none;
+}
+.contactForm .row100 textarea{
+    height: 100px;
+}
+.contactForm .row100 input::placeholder,
+.contactForm ,.row100 textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.contactForm .row100 input[type="submit"]{
+    background: #fff;
+    color: #000;
+    max-width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.sci ul{
+    display: flex;
+}
+sci ul li{
+    list-style: none;
+}
+.sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+.sci ul li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+.sci ul li a:hover img{
+    opacity: 0.5;
+}
+#button-up{
+    width: 60px;
+    height: 60px;
+    background: #3d3d3d;
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: 0px 20px 25px rgb(6, 6, 6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f4f4;
+    font-size: 50px;
+}
+
+
+
+@media (max-width: 900px){
+    header ul {
+        position: absolute;
+        visibility: hidden;
+        flex-direction: column;
+        top: 100px;
+        left: 10;
+        background: #525050;
+        width: 700px;
+        height: 100vh;
+    }
+
+    header.active ul{
+        visibility: visible;
+    }
+
+    .btnMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: #ffffff;
+        cursor: pointer;
+    }
+
+
+    .btnMenu::before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        box-shadow: 0 10px 0 #000;
+    }
+    .btnMenu::after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+    }
+    .banner{
+        background-position: center;
+    }
+    .banner h2{
+        font-size: 60px;
+        padding: 0 50px;
+    }
+    .sec .box{
+        width: 100%;
+    }
+    .casosBx .persona{
+        margin: 0 auto;
+    }
+    .advan .advanBox .box{
+        margin: 0 auto;
+    }
+
+}
+
